@@ -49,11 +49,11 @@ The strategy return was predicted to be 1.5 and the actual returns were about 1.
 
 ![4](https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/ninemonth/9monthwindow.png)
 
-Increasing the training window from to 9 months did not seem to offer any change in the classification report.
+Increasing the training window from to 9 months offered a slight a 2% and 1% accuracy improvement, respectively, for -1.0 and 1.0 signals.
 
-However, strategy returns and actual returns increased to 1.61 and 1.6, respectively.
+Strategy returns and actual returns increased to 1.61 and 1.6, respectively.
 
-### SMA Tuning
+### SMA Tuning (Fully Tuned)
 
 ![5](https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/tuned/fullytunedclassification.png)
 
@@ -62,23 +62,26 @@ However, strategy returns and actual returns increased to 1.61 and 1.6, respecti
 The short window was increased from 4 days to 20 days.
 The long window was increased from 100 days to 115 days.
 
+The accuracy for the -1.0 signal remained at 45% and the 1.0 signal increased slightly to 57%. Of note, the recall for the -1.0 signal dramastically lowered. Predicted returns dropped to 1.1. However, the actual returns broached 1.8
 
 
-Logistic Regression
+
+### Logistic Regression
 
 ![7](https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/lrclassification.png)
 
 ![8](https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/lr.png)
 
+Compared to the baseline model, the logistic regression model had slightly improved accuracy at the -1.0 signal. The predicted strategy return was lower at 1.1 which is arbitrary as the actual returns were slightly improved at 1.4 making the logistic regression model slightly preferable to the baseline model.
 
+However, the logistic regression model paled in comparison to a fully tuned model. The fully tuned model offered a 1% increase in accuracy at both the 1.0 and -1.0 signals.
 
-
-
+Of greater note is that the fully tuned model offered comparable predicted returns and far outperformed the logistic regression model in actual returns.
 
 ## Summary
 
-While both Machine Learning models perform exceptionally well, the second model is found to be ideal as it outperforms the first model in both accuracy and precision while losing only a tenth of a percent point in recall.
+Most interestingly, the fully tuned model offered superior accuracy at both signals. Despite being ranked fairly low for predicted returns, backtesting proves that this model actually offered the greatest actual returns.
 
-It is of note that the second model remains consistent in accurately predicting, both, health and high-risk loans.
+A summary consideration would be that, in spite of lower predictions, the fully tuned model offered superior buy and sell signals which resulted in the greatest overall gains.
 
-Therefore it is my recommendation to utilize the second model in credit risk prediction.
+Therefore it is my recommendation to utilize the model offering a 9 month training window with 20 and 115 days short and long windows, respectively.
