@@ -34,23 +34,35 @@
 
 ## Results
 
-Baseline Classification and Graph
+### Baseline Classification and Graph
 
 ![1](https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/baselineclassification.png)
 
 ![2](https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/baseline.png)
 
-Training Window
+This model determines a 43% accuracy at -1.0 and 56% at 1.0 signals.
+The strategy return was predicted to be 1.5 and the actual returns were about 1.38.
+
+### Training Window Increased From 3 to 9 Months
 
 ![3](https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/9monthwindowclassification.png)
 
 ![4](https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/9monthwindow.png)
 
-SMA
+Increasing the training window from to 9 months did not seem to offer any change in the classification report.
+
+However, strategy returns and actual returns increased to 1.61 and 1.6, respectively.
+
+### SMA Tuning
 
 ![5](https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/fullytunedclassification.png)
 
 ![6](https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/fullytuned.png)
+
+The short window was increased from 4 days to 20 days.
+The long window was increased from 100 days to 115 days.
+
+
 
 Logistic Regression
 
