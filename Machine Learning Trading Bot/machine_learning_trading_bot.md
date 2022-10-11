@@ -34,18 +34,34 @@
 
 ## Results
 
-Description of classification reports
+Baseline Classification and Graph
 
-![Alt text](https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/baselineclassification.png)
+!(https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/baselineclassification.png)
+
+!(https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/baseline.png)
+
+Training Window
+
+!(https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/9monthwindowclassification.png)
+
+!(https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/9monthwindow.png)
+
+SMA
+
+!(https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/fullytunedclassification.png)
+
+!(https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/fullytuned.png)
+
+Logistic Regression
+
+!(https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/lrclassification.png)
+
+!(https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/lr.png)
 
 
 
 
-* Machine Learning Model 2:
-  * Model 2 Accuracy, Preicision, and Recall scores.
-    * Accuracy = 99.4%
-    * Precision = 100%
-    * Recall = 99.4%
+
 
 ## Summary
 
