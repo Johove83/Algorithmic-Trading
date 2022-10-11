@@ -55,9 +55,9 @@ However, strategy returns and actual returns increased to 1.61 and 1.6, respecti
 
 ### SMA Tuning
 
-![5](https://github.com/Johove83/Algorithmic-Trading/blob/main/tuned/Machine%20Learning%20Trading%20Bot/images/fullytunedclassification.png)
+![5](https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/tuned/fullytunedclassification.png)
 
-![6](https://github.com/Johove83/Algorithmic-Trading/blob/main/tuned/Machine%20Learning%20Trading%20Bot/images/tuned/fullytuned.png)
+![6](https://github.com/Johove83/Algorithmic-Trading/blob/main/Machine%20Learning%20Trading%20Bot/images/tuned/fullytuned.png)
 
 The short window was increased from 4 days to 20 days.
 The long window was increased from 100 days to 115 days.
